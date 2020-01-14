@@ -108,6 +108,16 @@ In keeping with other designs, AC9 is connected directly to an indicator LED and
 
 Follow the online FT232H examples to connect the correct pins from the Shukran to the target circuit. The pinouts given below are *typical* but some programs may use different ones.
 
+### User LEDs
+
+The user LEDs are for monitoring the state of I/O pins. Connect a jumper wire from the top header pin on H3 or H4 below an LED to the required I/O pin and the second H3/H4 header pin is now also connected to the I/O pin. The LEDs are connected via a resistor to VBUS (5V) and so they will light up when the I/O line is pulled to ground because the FT232H ports are open drain.
+
+## User pullups
+
+There are two unassigned pullup resistors for use as you wish connect a jumper wire from either pin of H5 or H6 to the required I/O line and the second pin on the header is now also connected to the I/O pin.
+
+NB: The jumper position H9 determines whether the pullup resistors are connected to 5V (jumper on top two pins) or 3.3V (bottom two pins).
+
 ### I2C
 
 In I2C mode, the following pins/connections should be used:
@@ -118,11 +128,12 @@ SDA|AD1 + AD2|2 + 3 (linked)|Patch to H7
 SCL|AD0|1|Patch to H8
 GND|GND|GND|
 
-
-To make hookups easier, the Shukran has a dedicated I2C header, designated H11. To use this header:
+To make hookups easier, the board has a dedicated I2C header, designated H11. To use this header:
 
 - Fit a jumper on H10 ("I2C Func.") - this links FT232H pins AD1 and AD2 together.
 - Fit two more jumpers on H7 and H8 as needed to hook up the SDA and SCL pullup resistors. NB: The FT232H has no internal pullups.
+
+NB: The jumper position H9 determines whether the pullup resistors are connected to 5V (jumper on top two pins) or 3.3V (bottom two pins).
 
 You can now connect your I2C patch leads to SDA, SCL and ground on H11.
 
