@@ -38,7 +38,7 @@ CJMCU FT232H breakout board|NO
 Shukran + CJMCU FT232H breakout board|YES (polyfuse)
 Adafruit FT232H breakout board|NO
 Xipiter The Shikra|YES (polyfuse)
-Seeed Stdios FT2232H USB 2.0 Hi-Speed breakout board|NO
+Seeed Studios FT2232H USB 2.0 Hi-Speed breakout board|NO
 FTDI UM232H-B|NO 
 
 The assembled 2-board setup is compatible with many common tools and apps, such as CircuitPython and OpenOCD. - with the added bonus that the FT232H part is easily replaced if it gets damaged; just pull off the low-cost CJMCU board and fit a new one - no more writing off an expensive board or having to think about replacing a surface-mount chip!
