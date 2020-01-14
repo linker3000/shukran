@@ -114,7 +114,7 @@ The user LEDs are for monitoring the state of I/O pins. Connect a jumper wire fr
 
 ## User pullups
 
-There are two unassigned pullup resistors for use as you wish connect a jumper wire from either pin of H5 or H6 to the required I/O line and the second pin on the header is now also connected to the I/O pin.
+There are two unassigned pullup resistors for use as you wish; connect a jumper wire from either pin of H5 or H6 to the required I/O line and the second pin on the header is now also connected to the I/O pin.
 
 NB: The jumper position H9 determines whether the pullup resistors are connected to 5V (jumper on top two pins) or 3.3V (bottom two pins).
 
