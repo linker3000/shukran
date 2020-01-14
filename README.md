@@ -1,5 +1,3 @@
-**25 Dec 2019: If this message is present, this project is still in the prototyping stage and has not been completely tested. The PCB source files are probably not publicly available at this time. Please check back later.** 
-
 **This is a hobby project and comes with no official support. The PCB schematic and board design files are offered 'as is' with no claims made about their fitness for any specific purpose. As with any device capable of modifying the contents of flash chips and other connectable/communicatable devices, you can affect the operation of the host device, or 'brick' it, if you make a mistake so, just like any other FT232H-based board, you use this one at your own risk.**
 
 # Shukran
