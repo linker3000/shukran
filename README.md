@@ -1,7 +1,6 @@
 **This is a hobby project and comes with no official support. The PCB schematic and board design files are offered 'as is' with no claims made about their fitness for any specific purpose. As with any device capable of modifying the contents of flash chips and other connectable/communicatable devices, you can affect the operation of the host device, or 'brick' it, if you make a mistake so, just like any other FT232H-based board, you use this one at your own risk.**
 
 # Shukran
-A baseboard for the CJMCU FT232H module.
 
 The FT232H is a versatile multifunction USB to JTAG / UART / FIFO / SPI / I2C chip from FTDI (https://www.ftdichip.com/Products/ICs/FT232H.htm) that has been used on a number of generic interface, flash reader/programmer and signal probing boards - for example:
 
@@ -41,6 +40,8 @@ Xipiter The Shikra|YES (polyfuse)
 Seeed Studios FT2232H USB 2.0 Hi-Speed breakout board|NO
 FTDI UM232H-B|NO 
 
+![Image](shukran1a.jpg)
+
 The assembled 2-board setup is compatible with many common tools and apps, such as CircuitPython and OpenOCD. - with the added bonus that the FT232H part is easily replaced if it gets damaged; just pull off the low-cost CJMCU board and fit a new one - no more writing off an expensive board or having to think about replacing a surface-mount chip!
 
 To make a Shukran, you'll need to order the PCB, required components and a CJMCU board. The PCB design files are at: https://easyeda.comlinker3000/shukran/. Bare boards can be ordered directly from JLCPCB, or you can download the design files and use another manufacturer. 
@@ -78,6 +79,8 @@ Make sure you buy the right FT232H CJMCU board - check the image below.
 The board has a power LED and two LEDs fitted to FT232H pins AC3 and AC4. In UART mode, AC3 and AC4 are intended to be used to drive RxLED and TxLED indicators, but they have to be defined as such otherwise they will do nothing unless you specificially control them - see the FTDI docs for the chip.
 
 ## Using the Shukran
+
+![Image](shukran2a.jpg)
 
 The Shukran has a main header (H1) which breaks out the FT232H pins and also provides access to power as follows. All I/O pins are 3V3, 5V tolerant:
 
