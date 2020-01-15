@@ -67,6 +67,9 @@ R8-R11|Resistor 6K8 1/4W (or choose your pullup value, say 4K7 or 10K)
 LED1-4|3mm red or green
 Misc|4 x PCB jumper links
 Misc|Dupont hookup/patch wires - as needed
+Misc|USB 2.0 extension Cable: A Male Plug to A Female to connect the assembled unit to the host computer. 
+
+Using a short USB extension cable is recommended to reduce the physical stress of supporting the two-PCB assembly on the host computer's USB port. 
 
 ## CJMCU board notes
 
