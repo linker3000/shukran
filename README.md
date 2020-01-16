@@ -132,14 +132,14 @@ In I2C mode, the following pins/connections should be used:
 
 Function|FT232H pin|Shukran H1 pin|Pullup (if needed)
 ----------|----------|----------|---------
-SDA|AD1 + AD2|2 + 3 (linked)|Patch to H7
-SCL|AD0|1|Patch to H8
+SDA|AD1 + AD2|2 + 3 (linked)|Jumper on H7
+SCL|AD0|1|Jumper on H8
 GND|GND|GND|
 
 To make hookups easier, the board has a dedicated I2C header, designated H11. To use this header:
 
-- Fit a jumper on H10 ("I2C Func.") - this links FT232H pins AD1 and AD2 together.
-- Fit two more jumpers on H7 and H8 as needed to hook up the SDA and SCL pullup resistors. NB: The FT232H has no internal pullups.
+- Fit a jumper on H10 - this links FT232H pins AD1 and AD2 together.
+- Fit H7 and H8 jumpers if needed to hook up the SDA and SCL pullup resistors. NB: The FT232H has no internal pullups.
 
 NB: The jumper position H9 determines whether the pullup resistors are connected to 5V (jumper on top two pins) or 3.3V (bottom two pins).
 
