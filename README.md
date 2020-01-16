@@ -20,6 +20,8 @@ Plugging a CJMCU board onto the Shukran creates an easy-to-use multi-function bu
 
 ![Image](shukran1.png)
 
+(Board V1.01 has slightly modified screen printing but everything else is the same)
+
 A fully-populated Shukran board provides:
 
 - Breakout pins for the FT232H chip ports, and power rails
