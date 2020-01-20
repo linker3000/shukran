@@ -48,7 +48,7 @@ FTDI UM232H-B|NO
 
 The assembled 2-board setup is compatible with many common tools and apps, such as CircuitPython and OpenOCD, with the added bonus that the FT232H part is easily replaced if it gets damaged; just pull off the low-cost CJMCU board and fit a new one - no more writing off an expensive board or having to think about replacing a surface-mount chip!
 
-To make a Shukran, you'll need to order the PCB, required components and a CJMCU board. The PCB design files are at: https://easyeda.comlinker3000/shukran/. Bare boards can be ordered directly from JLCPCB, or you can download the design files and use another manufacturer. 
+To make a Shukran, you'll need to order the PCB, required components and a CJMCU board. The PCB design files are at: https://easyeda.com/linker3000/shukran/. Bare boards can be ordered directly from JLCPCB, or you can download the design files and use another manufacturer. 
 
 ## Bill of materials
 
