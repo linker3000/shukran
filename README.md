@@ -124,7 +124,7 @@ The user LEDs are for monitoring the state of I/O pins. Connect a jumper wire fr
 
 ![Image](leds1.jpg)
 
-In the above picture, the user LEDs are jumpered to show the state of AC2 and AC3. To make other connections to those lines,  the second pins on H3 and H4 are used.
+In the above picture, the user LEDs are jumpered to show the state of AC0 and AC1. To make other connections to those lines,  the second pins on H3 and H4 are used.
 
 ## User pullups
 
