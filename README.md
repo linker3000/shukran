@@ -157,6 +157,8 @@ NB: The jumper position H9 determines whether the pullup resistors are connected
 
 You can now connect your I2C patch leads to SDA, SCL and ground on H11.
 
+![Image](oledi2c.jpg)
+
 **REMEMBER TO REMOVE ANY JUMPERS ON H7 H8 and H10 WHEN NOT USING I2C MODE.**
 
 ### SPI
