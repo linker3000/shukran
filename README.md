@@ -132,7 +132,7 @@ There are two unassigned pullup resistors for use as needed; connect a jumper wi
 
 ![Image](pullup1.jpg)
 
-In the above picture, there is a pullup connected to AD6. To make a connection to that line, the second pin on H6 is used.
+In the above picture, there is a pullup connected to AD4. To make a connection to that line, the second pin on H6 is used.
 
 Fitting jumpers on H7 and H8 (marked SDA and SCL for I2C use), connects pullups to AD1 (SDA) and AD0 (SCL) respectively. These pullups can be used as needed, even for non-I2C protocols.
 
