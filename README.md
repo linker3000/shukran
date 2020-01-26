@@ -83,7 +83,7 @@ Make sure you buy the right FT232H CJMCU board - check the image below.
 
 **The header pins must be soldered to the PCB so they point downwards - this also means it's important to buy boards that don't have the header pins pre-soldered to the top of the PCB.**
 
-The board has a power LED and two LEDs fitted to FT232H pins AC3 and AC4. In UART mode, AC3 and AC4 are intended to be used to drive RxLED and TxLED indicators, but they have to be defined as such otherwise they will do nothing unless you specificially control them - see the FTDI docs for the chip.
+The board has a power LED and two LEDs fitted to FT232H pins AC3 and AC4. In UART mode, AC3 and AC4 are intended to be used to drive RxLED and TxLED indicators, but they have to be defined as such otherwise they will do nothing unless you specificially control them - see the FTDI docs for the chip and the section below on RxTx LEDs.
 
 ## Using the Shukran
 
@@ -125,6 +125,30 @@ The user LEDs are for monitoring the state of I/O pins. Connect a jumper wire fr
 ![Image](leds1.jpg)
 
 In the above picture, the user LEDs are jumpered to show the state of AC0 and AC1. To make other connections to those lines,  the second pins on H3 and H4 are used.
+
+### RxTx LEDs
+
+The CJMCU board has LEDs attached to FT232H lines AC3 and AC4, and the Shukran board has an LED permanently connected to AC9 in accordance with the FT232H reference design. These LEDs can be used as Rx/Tx indicators for async comms, however to set them up as such requires the FT232H's initialisation config to be modified.
+
+The FT232H architecture supports an EEPROM for storing chip configuration information, and FTDI provides a Windows-based tool called FT_PROG for setting-up this info - see: https://www.ftdichip.com/Support/Documents/AppNotes/AN_124_User_Guide_For_FT_PROG.pdf
+
+![Image](ftprog.jpg)
+
+There is also a linux-based flash read/write tool called *ftdi_eeprom* that comes with the libftdi driver bundle - BUT at the time of writing it does not work properly with the FT232H chip!
+
+The folks at Xipiter wrote a tool in Python to set various options on their 'Shikra' (FT232H) board, and because it's also based on the FTDI chip reference design, this tool also works with the Shukran. You will find the tool here: https://github.com/Xipiter/shikra-programmer. There's also a modified version here: https://github.com/linker3000/shikra-programmer.
+
+The modified version fixes an issue with the original that requires the default FTDI chip kernel module to be removed with *rmmod* in order for the tool to claim access to the board. 
+
+This tool allows AC9 to be defined as the async RxTx LED (read the instructions on the Github page), however it does not support setting AC3/4. Fortunately, the tool does allow FT232H flash memory backups to be taken and restored, and this repo includes three hex files that can be used to set and unset the Rx Tx LEDs by restoring the relevant file:
+
+File | Description 
+----------|----------
+default.hex|Sets board back to defaults (no LEDs in use)
+c9rxtx.hex|AC9 LED set as async RxTx indicator
+c3rxc4tx.hex|AC3 = Rx, AC4 = Tx
+
+Once the required file has been restored, the board needs to be unplugged/replugged to reinitialise the FT232H with its new settings.
 
 ## User pullups
 
