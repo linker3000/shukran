@@ -132,6 +132,8 @@ The CJMCU board has LEDs attached to FT232H lines AC3 and AC4, and the Shukran b
 
 The FT232H architecture supports an EEPROM for storing chip configuration information (there's one on the CJMCU board), and FTDI provides a Windows-based tool called FT_PROG for setting-up this info - see: https://www.ftdichip.com/Support/Documents/AppNotes/AN_124_User_Guide_For_FT_PROG.pdf
 
+**Observe the cautions about this utility - applying some settings may stop the FT232H from functioning.**
+
 ![Image](ftprog.jpg)
 
 There is also a linux-based flash read/write tool called *ftdi_eeprom* that comes with the libftdi driver bundle - BUT at the time of writing it does not work properly with the FT232H chip!
