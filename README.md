@@ -130,7 +130,7 @@ In the above picture, the user LEDs are jumpered to show the state of AC0 and AC
 
 The CJMCU board has LEDs attached to FT232H lines AC3 and AC4, and the Shukran board has an LED permanently connected to AC9 in accordance with the FT232H reference design. These LEDs can be used as Rx/Tx indicators for async comms, however to set them up as such requires the FT232H's initialisation config to be modified.
 
-The FT232H architecture supports an EEPROM for storing chip configuration information, and FTDI provides a Windows-based tool called FT_PROG for setting-up this info - see: https://www.ftdichip.com/Support/Documents/AppNotes/AN_124_User_Guide_For_FT_PROG.pdf
+The FT232H architecture supports an EEPROM for storing chip configuration information (there's one on the CJMCU board), and FTDI provides a Windows-based tool called FT_PROG for setting-up this info - see: https://www.ftdichip.com/Support/Documents/AppNotes/AN_124_User_Guide_For_FT_PROG.pdf
 
 ![Image](ftprog.jpg)
 
