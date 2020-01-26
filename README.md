@@ -199,18 +199,23 @@ GND|GND|GND
 
 ## UART (Async)
 
-Function|FT232H pin|Shukran H1 pin
-----------|----------|----------
-Tx|AD0|1 
-Rx|AD1|2 
-RTS*|AD2|3
-CTS*|AD3|4
-DTR*|AD4|5
-DSR*|AD5|6
-DCD*|AD6|7
-GND|GND|GND 
+Function|FT232H pin|Shukran H1 pin|Direction
+----------|----------|----------|----------
+Tx|AD0|1|OUT
+Rx|AD1|2|IN
+RTS*|AD2|3|OUT
+CTS*|AD3|4|IN
+DTR*|AD4|5|OUT
+DSR*|AD5|6|IN
+DCD*|AD6|7|IN
+RI*|AD7|8|IN
+RxLED\*\*|AC3 + LED on CJMCU board|12|
+TxLED\*\*|AC4 + LED on CJMCU board|13|
+GND|GND|GND| 
 
- *These optional signals may not be driven/read by some example programs. 
+ \*These optional signals may not be driven/read by some example programs.
+ 
+ \*\*See previous section on RxTx LEDs
 
 ## JTAG
 
