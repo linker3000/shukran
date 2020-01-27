@@ -109,7 +109,7 @@ Shukran H1 header pin|FT232H pin
 14|AC5
 15|AC6
 16|AC7
-17|5V, switched on/off by via AC8, NB: This signal is not controllable via regular I/O programming. See FTDI docs.
+17|5V, switched on/off by AC8, NB: This signal is not controllable via regular I/O programming. See FTDI docs.
 18|GND
 19|5V (VBUS)
 20|3V3
