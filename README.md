@@ -167,7 +167,7 @@ NB: The jumper position on H9 determines whether the pullup resistors are connec
 
 ## UART (Async/Serial)
 
-By default the FT232H chip starts it in Async/Serial mode - so when you plug in a CJMCU/Shukran board, you should see a new COM or /dev/ttyUSB port appear on your system and you can just go ahead and use it with a serial program such as TeraTerm or Minicom etc.
+By default the FT232H chip starts in Async/Serial mode - so when you plug in a CJMCU/Shukran board, you should see a new COM or /dev/ttyUSB port appear on your system and you can just go ahead and use it with a serial program such as TeraTerm or Minicom etc.
 
 Function|FT232H pin|Shukran H1 pin|Direction
 ----------|----------|----------|----------
