@@ -164,6 +164,29 @@ Fitting jumpers on H7 and H8 (marked SDA and SCL for I2C use), connects pullups 
 
 NB: The jumper position on H9 determines whether the pullup resistors are connected to 5V (jumper on top two pins) or 3.3V (bottom two pins).
 
+
+## UART (Async/Serial)
+
+By default the FT232H chip starts it in Async/Serial mode - so when you plug in a CJMCU/Shukran board, you should see a new COM or /dev/ttyUSB port appear on your system and you can just go ahead and use it with a serial program such as TeraTerm or Minicom etc.
+
+Function|FT232H pin|Shukran H1 pin|Direction
+----------|----------|----------|----------
+Tx|AD0|1|OUT
+Rx|AD1|2|IN
+RTS*|AD2|3|OUT
+CTS*|AD3|4|IN
+DTR*|AD4|5|OUT
+DSR*|AD5|6|IN
+DCD*|AD6|7|IN
+RI*|AD7|8|IN
+RxLED\*\*|AC3 + LED on CJMCU board|12|
+TxLED\*\*|AC4 + LED on CJMCU board|13|
+GND|GND|GND| 
+
+ \*These optional signals may not be driven/read by some example programs.
+ 
+ \*\*See previous section on RxTx LEDs
+
 ### I2C
 
 In I2C mode, the following pins/connections should be used:
@@ -196,26 +219,6 @@ MOSI (SDI)|AD1|2
 MISO (SDO)|AD2|3 
 CS|AD3|4 
 GND|GND|GND
-
-## UART (Async)
-
-Function|FT232H pin|Shukran H1 pin|Direction
-----------|----------|----------|----------
-Tx|AD0|1|OUT
-Rx|AD1|2|IN
-RTS*|AD2|3|OUT
-CTS*|AD3|4|IN
-DTR*|AD4|5|OUT
-DSR*|AD5|6|IN
-DCD*|AD6|7|IN
-RI*|AD7|8|IN
-RxLED\*\*|AC3 + LED on CJMCU board|12|
-TxLED\*\*|AC4 + LED on CJMCU board|13|
-GND|GND|GND| 
-
- \*These optional signals may not be driven/read by some example programs.
- 
- \*\*See previous section on RxTx LEDs
 
 ## JTAG
 
