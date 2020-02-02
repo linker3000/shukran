@@ -187,6 +187,8 @@ GND|GND|GND|
  
  \*\*See previous section on RxTx LEDs
 
+**To operate the board in any other mode requires software to setup and control it - for example, CircuitPython or OpenOCD etc. For more info, see the reference material at the bottom of this readme.**
+
 ### I2C
 
 In I2C mode, the following pins/connections should be used:
