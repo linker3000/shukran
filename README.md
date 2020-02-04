@@ -187,7 +187,7 @@ GND|GND|GND|
  
  \*\*See previous section on RxTx LEDs
 
-**To operate the board in any other mode requires software to setup and control it - for example, CircuitPython or OpenOCD etc. For more info, see the reference material at the bottom of this readme.**
+**To operate the board in any other mode requires software to setup and control it; for example, CircuitPython or OpenOCD etc. For more info, see the reference material at the bottom of this readme and the python examples in this repository.**
 
 ### I2C
 
