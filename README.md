@@ -55,7 +55,7 @@ To make a Shukran, you'll need to order the PCB, required components and a CJMCU
 ID	Part | Description 
 ----------|----------
 C1-C3|Capacitor 0.1uF 50V ceramic
-F1|500mA polyfuse SMD 1206 eg: Bourns MF-MSMF050-2
+F1|500mA polyfuse SMD 1812 eg: Bourns MF-MSMF050-2
 J1, J2|10-pin 0.1” (2.54mm) header female
 J3|4-pin 0.1” (2.54mm) header female
 H1|2 x 20-pin 0.1” (2.54mm) header male
