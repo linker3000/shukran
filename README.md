@@ -65,8 +65,8 @@ Q1|P-channel MOSFET 20V 3.7A SOT23 package eg: IRLML6402
 R1|Resistor 2K 1/4W
 R2|Resistor 27R 1/4W
 R3|Resistor 100K 1/4W
-R4, R6, R7|Resistor 330R 1/4W
-R5|Resistor 680R 1/4W
+R4, R6, R7|Resistor 330R 1/4W (the prototypes pictured used 390R)
+R5|Resistor 680R 1/4W (the prototypes pictured used 1K)
 R8-R11|Resistor 6K8 1/4W (or choose your pullup value, say 4K7 or 10K)
 LED1-4|3mm red or green
 Misc|4 x PCB jumper links
