@@ -35,6 +35,8 @@ A fully-populated Shukran board provides:
 
 Unlike some FT232H (and FT2232H) breakout boards, all Shukran 5V power pins are protected by a 500mA polyfuse to reduce the risk of overcurrent conditions or damaging the host USB port. 
 
+The FT232H's 3.3V supply pin is really only designed for use by the chip itself, pullups and the external EEPROM. Take care not to overload this pin - FTDI does not state a maximum current value for it.   
+
 Board|Current limited 5V power pins
 ----------|----------
 CJMCU FT232H breakout board|NO
