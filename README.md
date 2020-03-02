@@ -122,7 +122,7 @@ Follow the online FT232H examples to connect the correct pins from the Shukran t
 
 ### User LEDs
 
-The user LEDs are for monitoring the state of I/O pins. Connect a jumper wire from the top header pin on H3 or H4 below an LED to the required I/O pin and the second H3/H4 header pin is now also connected to the I/O pin. The LEDs are connected via a resistor to VBUS (5V) and so they will light up when the I/O line is pulled to ground because the FT232H ports are open drain.
+The user LEDs are for monitoring the state of I/O pins. Connect a jumper wire from the top header pin on H3 or H4 below an LED to the required I/O pin and the second H3/H4 header pin becomes the off-board connection point. The LEDs are connected via a resistor to VBUS (5V) and so they will light up when the I/O line is pulled to ground because the FT232H ports are open drain.
 
 ![Image](leds1.jpg)
 
