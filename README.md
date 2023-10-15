@@ -15,7 +15,7 @@ FT2232H USB 2.0 Hi-Speed breakout board|Seeed Studios|https://www.seeedstudio.co
 FTDI UM232H-B breakout board|FTDI|https://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_UM232H-B.pdf
 FT232H breakout board|CJMCU|Various suppliers
 
-This project is a baseboard for the CJMCU FT232H module, which is widely available on auction sites for under $8/£6. Edit: That price was from 2019 when the project was first posted here. The current price for the board is now around $16/£12. Welcome to October 2023!
+This project is a baseboard for the CJMCU FT232H module, which is widely available on auction sites for under $8/£6. Edit: That price was from 2019 when the project was first posted here. The current price for the board on eBay is now around $16/£12, although, if you can wait a bit longer for delivery, they are much cheaper on AliExpress. 
 
 Plugging a CJMCU board onto the Shukran creates an easy-to-use multi-function bus / device hacking and analysis tool with protected (current limited) 5V power pins, 3.3V power, spare pullup resistors and indicator LEDs, all for around $16/£12 total. The Shukran is designed to be assembled by anyone with moderate soldering skills; all components are through-hole except for two larger, surface mount, ones which should be easy to fit with a soldering iron.
 
