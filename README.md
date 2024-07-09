@@ -43,7 +43,7 @@ Board|Current limited 5V power pins
 CJMCU FT232H breakout board|NO
 Shukran + CJMCU FT232H breakout board|YES (polyfuse)
 Adafruit FT232H breakout board|NO
-Xipiter The Shikra|YES (polyfuse)
+~~Xipiter The Shikra~~ (Site dead Jul 2024)|YES (polyfuse)
 Foccacia|NO
 Seeed Studios FT2232H USB 2.0 Hi-Speed breakout board|NO
 FTDI UM232H-B|NO 
