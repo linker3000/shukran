@@ -262,7 +262,7 @@ https://github.com/linker3000/shikra-programmer
 
 http://dangerousprototypes.com/docs/FT2232_breakout_board
 
-https://int3.cc/products/the-shikra
+~~https://int3.cc/products/the-shikra~~
 
 http://www.openocd.org/doc/html/Debug-Adapter-Hardware.html
 
