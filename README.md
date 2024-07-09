@@ -9,7 +9,7 @@ The FT232H is a versatile multifunction USB to JTAG / UART / FIFO / SPI / I2C ch
 Name|Supplier|Ref
 ----------|----------|----------
 FT232H breakout board|Adafruit|https://learn.adafruit.com/adafruit-ft232h-breakout/overview
-The Shikra|Xipiter|https://int3.cc/products/the-shikra
+The Shikra|Xipiter|~~https://int3.cc/products/the-shikra~~
 Foccacia|Luca Bongiorni (WHID Injector)|https://github.com/whid-injector/Focaccia-Board
 FT2232H USB 2.0 Hi-Speed breakout board|Seeed Studios|https://www.seeedstudio.com/FT2232H-USB-2-0-Hi-Speed-breakout-board-p-737.html
 FTDI UM232H-B breakout board|FTDI|https://www.ftdichip.com/Support/Documents/DataSheets/Modules/DS_UM232H-B.pdf
